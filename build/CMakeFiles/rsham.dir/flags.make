@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include
+CXX_INCLUDES = -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include
 
 CXX_FLAGS = -Wall -Wextra -O3  -fopenmp -g
 

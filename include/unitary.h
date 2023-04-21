@@ -3,7 +3,7 @@
 #include <iostream>
 #include "typedef.h"
 #include <unordered_map>
-#include <nlohmann/json.hpp>
+#include <json.hpp>
 #include <vector>
 #include <string>
 #include <fstream>

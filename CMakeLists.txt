@@ -2,23 +2,6 @@ cmake_minimum_required(VERSION 3.13)
 set(CMAKE_CXX_STANDARD 17)
 
 
-# Set the URL of the GitHub repository containing the header files
-set(REPO_URL "https://github.com/nlohmann/json")
-set(SUBDIR "include/nlohmann")
-set(DESTINATION ${PROJECT_SOURCE_DIR}/external/nlohmann/)
-set(HEADERS  "json.hpp")
-
-# Download each header file using the file(DOWNLOAD ...) command
-file(DOWNLOAD ${REPO_URL}/raw/develop/${SUBDIR}/${HEADERS} ${DESTINATION}/${HEADERS})
-
-
-# Include the directory containing the downloaded header files in your project's include path
-include_directories(${DESTINATION})
-
-
-
-
-
 #Include different modules to provide additional functionalities
 # for instance FFT
 #set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/Modules)
@@ -28,11 +11,42 @@ project(QTReal)
 
 # Set the default header search path
 include_directories(${CMAKE_SOURCE_DIR}/include/)
+include_directories(${CMAKE_SOURCE_DIR}/external/)
 
 # Set the default source directory
 set(CMAKE_CURRENT_SOURCE_DIR ${CMAKE_SOURCE_DIR}/src)
 
 
+#DOWNLOAD THE ESSENTIAL DEPENDENCIES
+
+#First we check if git is presence as it is essential for the dependencies
+find_package(Git REQUIRED)
+if (NOT GIT_FOUND)
+    message(FATAL_ERROR "Git not found! Please install Git and try again.")
+endif()
+
+#Get JSON nlhomann library
+
+#clon the repository in a temporary file
+set(TEMP_DIR "tmp_json")
+set(REPO_URL "https://github.com/nlohmann/json.git")
+execute_process(
+  COMMAND git clone --depth 1 --branch develop ${REPO_URL} ${TEMP_DIR}
+  WORKING_DIRECTORY ${PROJECT_SOURCE_DIR} 
+  RESULT_VARIABLE git_result)
+if (NOT git_result EQUAL 0)
+    message(FATAL_ERROR "Failed to clone repository: ${REPO_URL}\n" ${git_result})
+endif()
+#move just the headers to the proper external directory
+set(DEST_DIR "external/nlohmann")
+set(HEADERS_PATH ${TEMP_DIR}/include/nlohmann/)
+file(RENAME ${HEADERS_PATH} ${DEST_DIR})
+include_directories(${DEST_DIR})
+#clean the temporary files
+file(REMOVE_RECURSE ${TEMP_DIR})
+
+
+#EIGEN3
 find_package(Eigen3 REQUIRED)
 if(${EIGEN3_FOUND})
     include_directories(${EIGEN3_INCLUDE_DIR})
@@ -40,6 +54,7 @@ else()
     message(FATAL_ERROR "Error: Eigen is required for the compilation of the code\n")
 endif()
 
+#OPENMP
 find_package(OpenMP)
 message(STATUS "OpenMP: ${OPENMP_FOUND}")
 if(${OPENMP_FOUND})

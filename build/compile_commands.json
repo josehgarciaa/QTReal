@@ -1,77 +1,77 @@
 [
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/rsham.dir/src/unitary.cpp.o -c /home/jgarcia/projects/QTReal/src/unitary.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/rsham.dir/src/unitary.cpp.o -c /home/jgarcia/projects/QTReal/src/unitary.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/unitary.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/rsham.dir/src/periodichamiltonian.cpp.o -c /home/jgarcia/projects/QTReal/src/periodichamiltonian.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/rsham.dir/src/periodichamiltonian.cpp.o -c /home/jgarcia/projects/QTReal/src/periodichamiltonian.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/periodichamiltonian.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/mklsp.dir/src/sparsematrix.cpp.o -c /home/jgarcia/projects/QTReal/src/sparsematrix.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/mklsp.dir/src/sparsematrix.cpp.o -c /home/jgarcia/projects/QTReal/src/sparsematrix.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/sparsematrix.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/mklblas.dir/src/mklblas.cpp.o -c /home/jgarcia/projects/QTReal/src/mklblas.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/mklblas.dir/src/mklblas.cpp.o -c /home/jgarcia/projects/QTReal/src/mklblas.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/mklblas.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/auxfunc.cpp.o -c /home/jgarcia/projects/QTReal/src/auxfunc.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/auxfunc.cpp.o -c /home/jgarcia/projects/QTReal/src/auxfunc.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/auxfunc.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/moments.cpp.o -c /home/jgarcia/projects/QTReal/src/moments.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/moments.cpp.o -c /home/jgarcia/projects/QTReal/src/moments.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/moments.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/moments1D.cpp.o -c /home/jgarcia/projects/QTReal/src/moments1D.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/moments1D.cpp.o -c /home/jgarcia/projects/QTReal/src/moments1D.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/moments1D.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/moments2D.cpp.o -c /home/jgarcia/projects/QTReal/src/moments2D.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/moments2D.cpp.o -c /home/jgarcia/projects/QTReal/src/moments2D.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/moments2D.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/momentsNEq.cpp.o -c /home/jgarcia/projects/QTReal/src/momentsNEq.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/momentsNEq.cpp.o -c /home/jgarcia/projects/QTReal/src/momentsNEq.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/momentsNEq.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/momentsTD.cpp.o -c /home/jgarcia/projects/QTReal/src/momentsTD.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/momentsTD.cpp.o -c /home/jgarcia/projects/QTReal/src/momentsTD.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/momentsTD.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/chebyshevsolver.cpp.o -c /home/jgarcia/projects/QTReal/src/chebyshevsolver.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/chebyshevsolver.cpp.o -c /home/jgarcia/projects/QTReal/src/chebyshevsolver.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/chebyshevsolver.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/vectorfilter.cpp.o -c /home/jgarcia/projects/QTReal/src/vectorfilter.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/kpmlib.dir/src/vectorfilter.cpp.o -c /home/jgarcia/projects/QTReal/src/vectorfilter.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/vectorfilter.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/vectorfactory.dir/src/generator.cpp.o -c /home/jgarcia/projects/QTReal/src/generator.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/vectorfactory.dir/src/generator.cpp.o -c /home/jgarcia/projects/QTReal/src/generator.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/generator.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/vectorfactory.dir/src/mklblas.cpp.o -c /home/jgarcia/projects/QTReal/src/mklblas.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/vectorfactory.dir/src/mklblas.cpp.o -c /home/jgarcia/projects/QTReal/src/mklblas.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/mklblas.cpp"
 },
 {
   "directory": "/home/jgarcia/projects/QTReal/build",
-  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/TestDOSGrapheneSpinful.dir/src/testDOS.cpp.o -c /home/jgarcia/projects/QTReal/src/testDOS.cpp",
+  "command": "/usr/bin/g++  -I/home/jgarcia/projects/QTReal/include -I/home/jgarcia/projects/QTReal/external -I/home/jgarcia/projects/QTReal/external/nlohmann -I/ -I/usr/include/eigen3 -I/home/jgarcia/projects/QTReal/external/json/include -Wall -Wextra -O3  -fopenmp -g -o CMakeFiles/TestDOSGrapheneSpinful.dir/src/testDOS.cpp.o -c /home/jgarcia/projects/QTReal/src/testDOS.cpp",
   "file": "/home/jgarcia/projects/QTReal/src/testDOS.cpp"
 }
 ]
