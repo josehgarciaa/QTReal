@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmklblas.a CMakeFiles/mklblas.dir/src/mklblas.cpp.o
+/usr/bin/ranlib libmklblas.a

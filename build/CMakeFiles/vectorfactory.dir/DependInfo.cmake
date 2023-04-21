@@ -1,0 +1,20 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/jgarcia/projects/QTReal/src/generator.cpp" "CMakeFiles/vectorfactory.dir/src/generator.cpp.o" "gcc" "CMakeFiles/vectorfactory.dir/src/generator.cpp.o.d"
+  "/home/jgarcia/projects/QTReal/src/mklblas.cpp" "CMakeFiles/vectorfactory.dir/src/mklblas.cpp.o" "gcc" "CMakeFiles/vectorfactory.dir/src/mklblas.cpp.o.d"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

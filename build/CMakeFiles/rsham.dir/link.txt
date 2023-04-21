@@ -1,0 +1,2 @@
+/usr/bin/ar qc librsham.a CMakeFiles/rsham.dir/src/unitary.cpp.o CMakeFiles/rsham.dir/src/periodichamiltonian.cpp.o
+/usr/bin/ranlib librsham.a

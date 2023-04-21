@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvectorfactory.a CMakeFiles/vectorfactory.dir/src/generator.cpp.o CMakeFiles/vectorfactory.dir/src/mklblas.cpp.o
+/usr/bin/ranlib libvectorfactory.a

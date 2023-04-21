@@ -1,0 +1,1 @@
+/usr/bin/g++ -Wall -Wextra -O3  -fopenmp -g CMakeFiles/TestDOSGrapheneSpinful.dir/src/testDOS.cpp.o -o TestDOSGrapheneSpinful  librsham.a libmklsp.a libmklblas.a libkpmlib.a libvectorfactory.a -ldl 

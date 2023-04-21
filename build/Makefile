@@ -116,6 +116,423 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named rsham
+
+# Build rule for target.
+rsham: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rsham
+.PHONY : rsham
+
+# fast build rule for target.
+rsham/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/build
+.PHONY : rsham/fast
+
+#=============================================================================
+# Target rules for targets named mklsp
+
+# Build rule for target.
+mklsp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mklsp
+.PHONY : mklsp
+
+# fast build rule for target.
+mklsp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklsp.dir/build.make CMakeFiles/mklsp.dir/build
+.PHONY : mklsp/fast
+
+#=============================================================================
+# Target rules for targets named mklblas
+
+# Build rule for target.
+mklblas: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mklblas
+.PHONY : mklblas
+
+# fast build rule for target.
+mklblas/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklblas.dir/build.make CMakeFiles/mklblas.dir/build
+.PHONY : mklblas/fast
+
+#=============================================================================
+# Target rules for targets named kpmlib
+
+# Build rule for target.
+kpmlib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kpmlib
+.PHONY : kpmlib
+
+# fast build rule for target.
+kpmlib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/build
+.PHONY : kpmlib/fast
+
+#=============================================================================
+# Target rules for targets named vectorfactory
+
+# Build rule for target.
+vectorfactory: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vectorfactory
+.PHONY : vectorfactory
+
+# fast build rule for target.
+vectorfactory/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/build
+.PHONY : vectorfactory/fast
+
+#=============================================================================
+# Target rules for targets named TestDOSGrapheneSpinful
+
+# Build rule for target.
+TestDOSGrapheneSpinful: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestDOSGrapheneSpinful
+.PHONY : TestDOSGrapheneSpinful
+
+# fast build rule for target.
+TestDOSGrapheneSpinful/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestDOSGrapheneSpinful.dir/build.make CMakeFiles/TestDOSGrapheneSpinful.dir/build
+.PHONY : TestDOSGrapheneSpinful/fast
+
+src/auxfunc.o: src/auxfunc.cpp.o
+.PHONY : src/auxfunc.o
+
+# target to build an object file
+src/auxfunc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/auxfunc.cpp.o
+.PHONY : src/auxfunc.cpp.o
+
+src/auxfunc.i: src/auxfunc.cpp.i
+.PHONY : src/auxfunc.i
+
+# target to preprocess a source file
+src/auxfunc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/auxfunc.cpp.i
+.PHONY : src/auxfunc.cpp.i
+
+src/auxfunc.s: src/auxfunc.cpp.s
+.PHONY : src/auxfunc.s
+
+# target to generate assembly for a file
+src/auxfunc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/auxfunc.cpp.s
+.PHONY : src/auxfunc.cpp.s
+
+src/chebyshevsolver.o: src/chebyshevsolver.cpp.o
+.PHONY : src/chebyshevsolver.o
+
+# target to build an object file
+src/chebyshevsolver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/chebyshevsolver.cpp.o
+.PHONY : src/chebyshevsolver.cpp.o
+
+src/chebyshevsolver.i: src/chebyshevsolver.cpp.i
+.PHONY : src/chebyshevsolver.i
+
+# target to preprocess a source file
+src/chebyshevsolver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/chebyshevsolver.cpp.i
+.PHONY : src/chebyshevsolver.cpp.i
+
+src/chebyshevsolver.s: src/chebyshevsolver.cpp.s
+.PHONY : src/chebyshevsolver.s
+
+# target to generate assembly for a file
+src/chebyshevsolver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/chebyshevsolver.cpp.s
+.PHONY : src/chebyshevsolver.cpp.s
+
+src/generator.o: src/generator.cpp.o
+.PHONY : src/generator.o
+
+# target to build an object file
+src/generator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/src/generator.cpp.o
+.PHONY : src/generator.cpp.o
+
+src/generator.i: src/generator.cpp.i
+.PHONY : src/generator.i
+
+# target to preprocess a source file
+src/generator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/src/generator.cpp.i
+.PHONY : src/generator.cpp.i
+
+src/generator.s: src/generator.cpp.s
+.PHONY : src/generator.s
+
+# target to generate assembly for a file
+src/generator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/src/generator.cpp.s
+.PHONY : src/generator.cpp.s
+
+src/mklblas.o: src/mklblas.cpp.o
+.PHONY : src/mklblas.o
+
+# target to build an object file
+src/mklblas.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklblas.dir/build.make CMakeFiles/mklblas.dir/src/mklblas.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/src/mklblas.cpp.o
+.PHONY : src/mklblas.cpp.o
+
+src/mklblas.i: src/mklblas.cpp.i
+.PHONY : src/mklblas.i
+
+# target to preprocess a source file
+src/mklblas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklblas.dir/build.make CMakeFiles/mklblas.dir/src/mklblas.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/src/mklblas.cpp.i
+.PHONY : src/mklblas.cpp.i
+
+src/mklblas.s: src/mklblas.cpp.s
+.PHONY : src/mklblas.s
+
+# target to generate assembly for a file
+src/mklblas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklblas.dir/build.make CMakeFiles/mklblas.dir/src/mklblas.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vectorfactory.dir/build.make CMakeFiles/vectorfactory.dir/src/mklblas.cpp.s
+.PHONY : src/mklblas.cpp.s
+
+src/moments.o: src/moments.cpp.o
+.PHONY : src/moments.o
+
+# target to build an object file
+src/moments.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments.cpp.o
+.PHONY : src/moments.cpp.o
+
+src/moments.i: src/moments.cpp.i
+.PHONY : src/moments.i
+
+# target to preprocess a source file
+src/moments.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments.cpp.i
+.PHONY : src/moments.cpp.i
+
+src/moments.s: src/moments.cpp.s
+.PHONY : src/moments.s
+
+# target to generate assembly for a file
+src/moments.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments.cpp.s
+.PHONY : src/moments.cpp.s
+
+src/moments1D.o: src/moments1D.cpp.o
+.PHONY : src/moments1D.o
+
+# target to build an object file
+src/moments1D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments1D.cpp.o
+.PHONY : src/moments1D.cpp.o
+
+src/moments1D.i: src/moments1D.cpp.i
+.PHONY : src/moments1D.i
+
+# target to preprocess a source file
+src/moments1D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments1D.cpp.i
+.PHONY : src/moments1D.cpp.i
+
+src/moments1D.s: src/moments1D.cpp.s
+.PHONY : src/moments1D.s
+
+# target to generate assembly for a file
+src/moments1D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments1D.cpp.s
+.PHONY : src/moments1D.cpp.s
+
+src/moments2D.o: src/moments2D.cpp.o
+.PHONY : src/moments2D.o
+
+# target to build an object file
+src/moments2D.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments2D.cpp.o
+.PHONY : src/moments2D.cpp.o
+
+src/moments2D.i: src/moments2D.cpp.i
+.PHONY : src/moments2D.i
+
+# target to preprocess a source file
+src/moments2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments2D.cpp.i
+.PHONY : src/moments2D.cpp.i
+
+src/moments2D.s: src/moments2D.cpp.s
+.PHONY : src/moments2D.s
+
+# target to generate assembly for a file
+src/moments2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/moments2D.cpp.s
+.PHONY : src/moments2D.cpp.s
+
+src/momentsNEq.o: src/momentsNEq.cpp.o
+.PHONY : src/momentsNEq.o
+
+# target to build an object file
+src/momentsNEq.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/momentsNEq.cpp.o
+.PHONY : src/momentsNEq.cpp.o
+
+src/momentsNEq.i: src/momentsNEq.cpp.i
+.PHONY : src/momentsNEq.i
+
+# target to preprocess a source file
+src/momentsNEq.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/momentsNEq.cpp.i
+.PHONY : src/momentsNEq.cpp.i
+
+src/momentsNEq.s: src/momentsNEq.cpp.s
+.PHONY : src/momentsNEq.s
+
+# target to generate assembly for a file
+src/momentsNEq.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/momentsNEq.cpp.s
+.PHONY : src/momentsNEq.cpp.s
+
+src/momentsTD.o: src/momentsTD.cpp.o
+.PHONY : src/momentsTD.o
+
+# target to build an object file
+src/momentsTD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/momentsTD.cpp.o
+.PHONY : src/momentsTD.cpp.o
+
+src/momentsTD.i: src/momentsTD.cpp.i
+.PHONY : src/momentsTD.i
+
+# target to preprocess a source file
+src/momentsTD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/momentsTD.cpp.i
+.PHONY : src/momentsTD.cpp.i
+
+src/momentsTD.s: src/momentsTD.cpp.s
+.PHONY : src/momentsTD.s
+
+# target to generate assembly for a file
+src/momentsTD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/momentsTD.cpp.s
+.PHONY : src/momentsTD.cpp.s
+
+src/periodichamiltonian.o: src/periodichamiltonian.cpp.o
+.PHONY : src/periodichamiltonian.o
+
+# target to build an object file
+src/periodichamiltonian.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/src/periodichamiltonian.cpp.o
+.PHONY : src/periodichamiltonian.cpp.o
+
+src/periodichamiltonian.i: src/periodichamiltonian.cpp.i
+.PHONY : src/periodichamiltonian.i
+
+# target to preprocess a source file
+src/periodichamiltonian.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/src/periodichamiltonian.cpp.i
+.PHONY : src/periodichamiltonian.cpp.i
+
+src/periodichamiltonian.s: src/periodichamiltonian.cpp.s
+.PHONY : src/periodichamiltonian.s
+
+# target to generate assembly for a file
+src/periodichamiltonian.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/src/periodichamiltonian.cpp.s
+.PHONY : src/periodichamiltonian.cpp.s
+
+src/sparsematrix.o: src/sparsematrix.cpp.o
+.PHONY : src/sparsematrix.o
+
+# target to build an object file
+src/sparsematrix.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklsp.dir/build.make CMakeFiles/mklsp.dir/src/sparsematrix.cpp.o
+.PHONY : src/sparsematrix.cpp.o
+
+src/sparsematrix.i: src/sparsematrix.cpp.i
+.PHONY : src/sparsematrix.i
+
+# target to preprocess a source file
+src/sparsematrix.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklsp.dir/build.make CMakeFiles/mklsp.dir/src/sparsematrix.cpp.i
+.PHONY : src/sparsematrix.cpp.i
+
+src/sparsematrix.s: src/sparsematrix.cpp.s
+.PHONY : src/sparsematrix.s
+
+# target to generate assembly for a file
+src/sparsematrix.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mklsp.dir/build.make CMakeFiles/mklsp.dir/src/sparsematrix.cpp.s
+.PHONY : src/sparsematrix.cpp.s
+
+src/testDOS.o: src/testDOS.cpp.o
+.PHONY : src/testDOS.o
+
+# target to build an object file
+src/testDOS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestDOSGrapheneSpinful.dir/build.make CMakeFiles/TestDOSGrapheneSpinful.dir/src/testDOS.cpp.o
+.PHONY : src/testDOS.cpp.o
+
+src/testDOS.i: src/testDOS.cpp.i
+.PHONY : src/testDOS.i
+
+# target to preprocess a source file
+src/testDOS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestDOSGrapheneSpinful.dir/build.make CMakeFiles/TestDOSGrapheneSpinful.dir/src/testDOS.cpp.i
+.PHONY : src/testDOS.cpp.i
+
+src/testDOS.s: src/testDOS.cpp.s
+.PHONY : src/testDOS.s
+
+# target to generate assembly for a file
+src/testDOS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestDOSGrapheneSpinful.dir/build.make CMakeFiles/TestDOSGrapheneSpinful.dir/src/testDOS.cpp.s
+.PHONY : src/testDOS.cpp.s
+
+src/unitary.o: src/unitary.cpp.o
+.PHONY : src/unitary.o
+
+# target to build an object file
+src/unitary.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/src/unitary.cpp.o
+.PHONY : src/unitary.cpp.o
+
+src/unitary.i: src/unitary.cpp.i
+.PHONY : src/unitary.i
+
+# target to preprocess a source file
+src/unitary.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/src/unitary.cpp.i
+.PHONY : src/unitary.cpp.i
+
+src/unitary.s: src/unitary.cpp.s
+.PHONY : src/unitary.s
+
+# target to generate assembly for a file
+src/unitary.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rsham.dir/build.make CMakeFiles/rsham.dir/src/unitary.cpp.s
+.PHONY : src/unitary.cpp.s
+
+src/vectorfilter.o: src/vectorfilter.cpp.o
+.PHONY : src/vectorfilter.o
+
+# target to build an object file
+src/vectorfilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/vectorfilter.cpp.o
+.PHONY : src/vectorfilter.cpp.o
+
+src/vectorfilter.i: src/vectorfilter.cpp.i
+.PHONY : src/vectorfilter.i
+
+# target to preprocess a source file
+src/vectorfilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/vectorfilter.cpp.i
+.PHONY : src/vectorfilter.cpp.i
+
+src/vectorfilter.s: src/vectorfilter.cpp.s
+.PHONY : src/vectorfilter.s
+
+# target to generate assembly for a file
+src/vectorfilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kpmlib.dir/build.make CMakeFiles/kpmlib.dir/src/vectorfilter.cpp.s
+.PHONY : src/vectorfilter.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +541,54 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... TestDOSGrapheneSpinful"
+	@echo "... kpmlib"
+	@echo "... mklblas"
+	@echo "... mklsp"
+	@echo "... rsham"
+	@echo "... vectorfactory"
+	@echo "... src/auxfunc.o"
+	@echo "... src/auxfunc.i"
+	@echo "... src/auxfunc.s"
+	@echo "... src/chebyshevsolver.o"
+	@echo "... src/chebyshevsolver.i"
+	@echo "... src/chebyshevsolver.s"
+	@echo "... src/generator.o"
+	@echo "... src/generator.i"
+	@echo "... src/generator.s"
+	@echo "... src/mklblas.o"
+	@echo "... src/mklblas.i"
+	@echo "... src/mklblas.s"
+	@echo "... src/moments.o"
+	@echo "... src/moments.i"
+	@echo "... src/moments.s"
+	@echo "... src/moments1D.o"
+	@echo "... src/moments1D.i"
+	@echo "... src/moments1D.s"
+	@echo "... src/moments2D.o"
+	@echo "... src/moments2D.i"
+	@echo "... src/moments2D.s"
+	@echo "... src/momentsNEq.o"
+	@echo "... src/momentsNEq.i"
+	@echo "... src/momentsNEq.s"
+	@echo "... src/momentsTD.o"
+	@echo "... src/momentsTD.i"
+	@echo "... src/momentsTD.s"
+	@echo "... src/periodichamiltonian.o"
+	@echo "... src/periodichamiltonian.i"
+	@echo "... src/periodichamiltonian.s"
+	@echo "... src/sparsematrix.o"
+	@echo "... src/sparsematrix.i"
+	@echo "... src/sparsematrix.s"
+	@echo "... src/testDOS.o"
+	@echo "... src/testDOS.i"
+	@echo "... src/testDOS.s"
+	@echo "... src/unitary.o"
+	@echo "... src/unitary.i"
+	@echo "... src/unitary.s"
+	@echo "... src/vectorfilter.o"
+	@echo "... src/vectorfilter.i"
+	@echo "... src/vectorfilter.s"
 .PHONY : help
 
 
