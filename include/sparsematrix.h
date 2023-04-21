@@ -31,6 +31,44 @@ class SparseMatBase{
     inline void SetNelem(const Integer n){ _nnz = n;};
     size_t rank() {return ((this->NumRows() > this->NumCols())? this->NumCols(): this->NumRows());};  
 
+
+};
+
+
+
+class SparseMat : public SparseMatBase {
+private:
+    bool initialized = false;
+    std::string _label;
+    Eigen::SparseMatrix<std::complex<double>, Eigen::RowMajor> matrix;
+
+public:
+    SparseMat() {
+        // Set matrix properties if required
+    }
+
+    ~SparseMat() {
+        // No need to manually destroy the matrix, Eigen takes care of it
+        _label = std::string();
+    }
+
+    std::string matrix_type() const { return "CSR MATRIX FROM EIGEN"; }
+
+    inline Eigen::SparseMatrix<std::complex<double>, Eigen::RowMajor> &eigen_matrix() { return matrix; }
+
+    inline void ReleaseMatrix() {
+        if (this->initialized) {
+            matrix.resize(0, 0); // Resizes matrix to 0x0, effectively releasing the memory
+            this->initialized = false;
+        } else {
+        }
+    }
+
+    inline void SetSkewHermitian() {
+        // Implement functionality if required
+        
+    }
+
     void Multiply(const scalar a, const std::vector<scalar> & x, const scalar b, std::vector<scalar> & y);
     /*!
     * \fn void Multiply(const scalar a, const std::vector<scalar>& x, const scalar b, std::vector<scalar>& y)
@@ -81,41 +119,7 @@ class SparseMatBase{
     inline void MakeIdentity(){ this -> SetFormat("id");};
     inline std::string GetLabel(){return this -> _label;};
     inline void SetLabel(std::string label){this -> _label = label;};
-};
 
-
-
-class SparseMat : public SparseMatBase {
-private:
-    bool initialized = false;
-    std::string _label;
-    Eigen::SparseMatrix<std::complex<double>, Eigen::RowMajor> matrix;
-
-public:
-    SparseMat() {
-        // Set matrix properties if required
-    }
-
-    ~SparseMat() {
-        // No need to manually destroy the matrix, Eigen takes care of it
-        _label = std::string();
-    }
-
-    std::string matrix_type() const { return "CSR MATRIX FROM EIGEN"; }
-
-    inline Eigen::SparseMatrix<std::complex<double>, Eigen::RowMajor> &eigen_matrix() { return matrix; }
-
-    inline void ReleaseMatrix() {
-        if (this->initialized) {
-            matrix.resize(0, 0); // Resizes matrix to 0x0, effectively releasing the memory
-            this->initialized = false;
-        } else {
-        }
-    }
-
-    inline void SetSkewHermitian() {
-        // Implement functionality if required
-    }
 };
 
 
