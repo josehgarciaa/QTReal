@@ -1,8 +1,7 @@
-#ifndef MKLBLAS
-#define MKLBLAS
+#ifndef BLAS
+#define BLAS
 #include "typedef.h"
 #include <cassert>
-#include "mkl.h"
 
 
 namespace linalg{

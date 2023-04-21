@@ -12,7 +12,7 @@
 #include "sparsematrix.h"
 #include "moments.h"
 #include "chebcoef.h"
-#include "mklblas.h"
+#include "blas.h"
 #include <omp.h>
 #include <chrono>
 #include "statefactory.h"

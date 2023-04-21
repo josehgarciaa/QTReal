@@ -1,4 +1,4 @@
-#include "mklblas.h"
+#include "mkl_blas.h"
 
 namespace linalg{
 

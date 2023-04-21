@@ -39,6 +39,7 @@ if (NOT git_result EQUAL 0)
 endif()
 #move just the headers to the proper external directory
 set(DEST_DIR "external/nlohmann")
+file(REMOVE_RECURSE ${DEST_DIR})
 set(HEADERS_PATH ${TEMP_DIR}/include/nlohmann/)
 file(RENAME ${HEADERS_PATH} ${DEST_DIR})
 include_directories(${DEST_DIR})
@@ -79,6 +80,10 @@ endif()
 #endif()
 #include_directories("/usr/include/mkl")
 
+
+
+#
+set (BLASBACKEND eigen)
 ##Libraries
 
 #Build the Real-Space Hamiltonian library
@@ -95,12 +100,12 @@ set(MKLSP mklsp)
 add_library(${MKLSP} STATIC ${SOURCES})
 target_link_libraries(${MKLSP} ${BLAS_LIBRARIES})
 
-#Build the MKL blas library
-set(SOURCES "mklblas.cpp")
+#Build the Basic Lineat Algebra library
+set(SOURCES "${BLASBACKEND}_blas.cpp")
 list(TRANSFORM SOURCES PREPEND ${CMAKE_CURRENT_SOURCE_DIR}/)
-set(MKLBLAS mklblas)
-add_library(${MKLBLAS} STATIC ${SOURCES})
-target_link_libraries(${MKLBLAS} ${BLAS_LIBRARIES})
+set(BLAS blas)
+add_library(${BLAS} STATIC ${SOURCES})
+target_link_libraries(${BLAS} ${BLAS_LIBRARIES})
 
 #Build the KPM library
 set(SOURCES "auxfunc.cpp" "moments.cpp" "moments1D.cpp" "moments2D.cpp" "momentsNEq.cpp" "momentsTD.cpp" "chebyshevsolver.cpp" "vectorfilter.cpp")
@@ -109,7 +114,7 @@ set(KPMLIB kpmlib)
 add_library(${KPMLIB} STATIC ${SOURCES})
 
 #Build the vector factory librar
-set(SOURCES "generator.cpp" "mklblas.cpp")
+set(SOURCES "generator.cpp" "${BLASBACKEND}_blas.cpp")
 list(TRANSFORM SOURCES PREPEND ${CMAKE_CURRENT_SOURCE_DIR}/)
 set(VECFACTORY vectorfactory)
 add_library(${VECFACTORY} STATIC ${SOURCES})
@@ -118,18 +123,9 @@ target_link_libraries(${VECFACTORY} ${BLAS_LIBRARIES})
 
 
 
-
-
-
-
-
-
-
-
-
 ### Tests
 set(DLLINK dl)
 set(MAIN TestDOSGrapheneSpinful)
 add_executable(${MAIN} src/testDOS.cpp)
-target_link_libraries(${MAIN} ${RSHAM} ${MKLSP} ${MKLBLAS} ${KPMLIB} ${VECFACTORY} ${SPATIAL} ${DLLINK})
+target_link_libraries(${MAIN} ${RSHAM} ${MKLSP} ${BLAS} ${KPMLIB} ${VECFACTORY}  ${DLLINK})
 

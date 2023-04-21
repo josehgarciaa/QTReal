@@ -9,7 +9,7 @@
 #include <fstream>
 #include <memory>
 #include <numeric>
-#include "mklblas.h"
+#include "blas.h"
 #include "sparsematrix.h"
 
 enum StateType{

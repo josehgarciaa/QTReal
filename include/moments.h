@@ -9,7 +9,7 @@
 #include <limits>
 #include <fstream>
 #include "sparsematrix.h"
-#include "mklblas.h"
+#include "blas.h"
 #include "auxfunc.h"
 
 namespace chebyshev{
@@ -262,7 +262,7 @@ namespace chebyshev{
             inline void SetForceMat(SparseMat & FMat){
                 if(this -> SystemSize() ==0)
                     this -> SystemSize(FMat.rank());
-                    assert(FMat.rank() == this -> SystemSize() && FMat.mkl_descr().type == SPARSE_MATRIX_TYPE_GENERAL);
+                    std::cout<<" implement assert(FMat.rank() == this -> SystemSize() && FMat.mkl_descr().type == SPARSE_MATRIX_TYPE_GENERAL) \n";
                     _ptrForceMat = & FMat;
             };
     };

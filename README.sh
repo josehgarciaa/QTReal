@@ -1,9 +1,10 @@
 #!/bin/bash
 
+#Requires Git
 #Requires  Eigen3
-#Install it as sudo apt install libeigen3-dev
 #Requires OpenMP
-#Install it using
+#Requires boost
+
 
 
 mkdir -p build
