@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmklsp.a CMakeFiles/mklsp.dir/src/sparsematrix.cpp.o
-/usr/bin/ranlib libmklsp.a

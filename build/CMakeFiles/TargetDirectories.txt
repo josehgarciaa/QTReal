@@ -1,8 +1,0 @@
-/home/jgarcia/projects/QTReal/build/CMakeFiles/rsham.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/mklsp.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/mklblas.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/kpmlib.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/vectorfactory.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/TestDOSGrapheneSpinful.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/edit_cache.dir
-/home/jgarcia/projects/QTReal/build/CMakeFiles/rebuild_cache.dir
