@@ -1,0 +1,2 @@
+/home/jgarcia/projects/QTReal/build/CMakeFiles/edit_cache.dir
+/home/jgarcia/projects/QTReal/build/CMakeFiles/rebuild_cache.dir

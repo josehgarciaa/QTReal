@@ -1,6 +1,0 @@
-#include "${LMPPATH}/lammps.h"
-#include "${LMPPATH}/library.h"
-#include "${LMPPATH}/input.h"
-#include "${LMPPATH}/modify.h"
-#include "${LMPPATH}/fix.h"
-#include "${LMPPATH}/fix_external.h"
